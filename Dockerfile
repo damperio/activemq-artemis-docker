@@ -87,4 +87,3 @@ WORKDIR /var/lib/artemis/bin
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["artemis-server"]
