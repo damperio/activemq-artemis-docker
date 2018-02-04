@@ -51,7 +51,7 @@ RUN cd /var/lib && \
 RUN cd /var/lib/artemis/etc && \
   xmlstarlet ed -L -N amq="http://activemq.org/schema" \
     -u "/amq:broker/amq:web/@bind" \
-    -v "http://*:8161" bootstrap.xml
+    -v "http://localost:8161" bootstrap.xml
 
 RUN chown -R artemis.artemis /var/lib/artemis
 
